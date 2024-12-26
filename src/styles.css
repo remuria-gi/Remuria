@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+@import url('https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+
+:root {
+  --content-margin-left: 160px; /* Default margin for expanded sidebar */
+  --content-margin-top: 30px; /* Default margin for expanded sidebar */
+  
+}
+
+body {
+  font-family: Rubik , Kanit , sans-serif !important; 
+  background: #1d1c23 , height(1000px) , position(absolute),
+            top(0) , left(0) , width(100%), z-index(-5) !important; /* Base background color */
+  margin: 0 !important;
+  padding: 0 !important;
+  background-image: 
+    url('https://i.ibb.co/VxX50DZ/bg2.png'),/* Background image */
+    linear-gradient(180deg,transparent,#132065 80%) !important;
+  background-blend-mode: multiply !important; /* Blend the image with the gradient */
+  background-position: 50% 0 !important;
+  background-size: cover !important; /* Ensures the image covers the entire body */
+  background-repeat: no-repeat !important; /* Prevents the image from repeating */
+  background-attachment: fixed !important;
+}
+
+.App {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+}
+
+.layout {
+  display: flex; /* Flex container for sidebar and content */
+  flex-grow: 1; /* Allow the layout to fill available space */
+}
+
+.content {
+  margin-left: var(--content-margin-left);
+  margin-top: var(--content-margin-top);
+  height: 100vh;
+  flex-grow: 1; /* Allow content area to fill remaining space */
+  padding: 20px; /* Add some padding around content */
+  color: white; /* Content text color */
+  flex: 1;
+}
+
+.sidebar.collapsed ~ .content {
+  margin-left: 70px; /* Adjust margin for collapsed sidebar */
+}
+
+.tier-list-container {
+  position: relative; /* Establish positioning context */
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: calc(100vh - 150px); /* Adjust based on your layout */
+  padding-top: 60px; /* Space for headers */
+  width: 100%; /* Full width for the container */
+}
+
+
+.tier-list-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr; /* Maintained previous width */
+  width: 100%; /* Kept original width */
+  overflow: hidden;
+  transform-origin: top left; /* Anchor scaling from the top-left corner */
+  margin-top: 15px;
+}
+
+.grid-header {
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Align to the top */
+  color: white; /* Text color for headers */
+  padding: 10px; /* Padding around the header */
+  z-index: 10; /* Ensure headers are above content */
+}
+
+.main-dps-header{
+  background-color: #2c2d33;
+  color: rgb(180, 0, 0);
+  font-size: 12px; /* Adjust font size as needed */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.amplifiers-header {
+  background-color: #2c2d33;
+  color: peru;
+  font-size: 12px; /* Adjust font size as needed */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.sub-dps-header {
+  background-color: #36373f;
+  color: rgba(0, 255, 255, 0.799);
+  font-size: 12px; /* Adjust font size as needed */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.sustain-header {
+  background-color: #36373f;
+  color: lightgreen;
+  font-size: 12px; /* Adjust font size as needed */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.grid-tier {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  font-size: 18px; /* Original font size */
+  border-bottom: 1px solid #000000;
+  display: flex; /* Added flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-bottom: 10px;
+}
+
+.grid-cell {
+  padding: 10px; /* Original padding */
+  text-align: left;
+  border-bottom: 1px solid #000000;
+  display: flex;
+  gap: 0px;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align the cards starting from the left */
+  align-items: flex-start; /* Align cards to the top */
+  margin-bottom: 10px;
+}
+
+.main-dps {
+  background-color: #2c2d33;
+  color: white;
+  text-align: center;
+}
+
+.sub-dps {
+  background-color: #36373f;
+  color: white;
+}
+
+.amplifiers {
+  background-color: #2c2d33; /* Same as main DPS */
+  color: white;
+}
+
+.sustain {
+  background-color: #36373f; /* Same as main DPS */
+  color: white;
+  text-align: center;
+}
+
+.characters-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap; /* Ensure cards wrap to the next line if necessary */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+
+.character-list.collapsed {
+  margin-left: 20px; /* Adjust margin for collapsed sidebar */
+}
+
+.character-list.expanded {
+  margin-left: 10px; /* Adjust margin for expanded sidebar */
+}
+
+.character-card { /*For TierList component */
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 3px; /* Original padding */
+  width: 77px; /* Original width for proper card size */
+  height: auto; /* Ensure uniform height for all cards */
+  text-align: center;
+}
+
+.charlist-card {
+  position: relative;
+  display: flex; /* Use flexbox for better layout control */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-end; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  margin: 10px; /* Adjust spacing between cards */
+  width: 10%; /* Set width as needed; this allows for multiple cards in a row */
+  max-width: 120px; /* Set a maximum width for the card */
+  height: auto; /* Allow height to adjust based on content */
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-image {
+  width: 100%; /* Make sure the image fills the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits within the card */
+  filter: contrast(90%) brightness(105%);
+}
+
+.charlist-overlay {
+  position: absolute;
+  bottom: 0; /* Position at the bottom of the card */
+  width: 100%;
+  text-align: center;
+  padding: 5px 0; /* Add some padding for the text */
+}
+
+.charlist-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.charlist-card.collapsed .charlist-text {
+  font-size: 12px; 
+}
+
+.collapsed-image {
+  width: 100%; /* Ensure it fills the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+  filter: contrast(90%) brightness(105%);
+}
+
+.expanded-image {
+  width: 100px; /* Ensure it fills the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+  filter: contrast(90%) brightness(105%);
+}
+
+.character-overlay {
+  position: absolute; /* Allow positioning relative to .character-card */
+  top: 2px; /* Position the overlay */
+  left: 3px; /* Position the overlay */
+  width: 20px; /* Customize the size */
+  height: 20px; /* Customize the size */
+  z-index: 1; /* Ensure overlay appears above the character image */
+  pointer-events: none; /* Prevent interaction with the overlay */
+}
+
+
+/* Increase top margin for cards in the first row */
+.grid-cell > .character-card:nth-child(-n+6) { /* Adjust '3' based on how many cards you want in the first row */
+  margin-top: 30px; /* Change this value to your desired top margin */
+}
+
+.tier-T0 {
+  background-color: #f75451; /* Example color for T0 */
+}
+
+.tier-T0_5 {
+  background-color: #ec6563; /* Example color for T0.5 */
+}
+
+.tier-T1 {
+  background-color: #ff9a67; /* Example color for T1 */
+}
+
+.tier-T2 {
+  background-color: #fed4a0; /* Example color for T2 */
+}
+
+.tier-T3 {
+  background-color: #f2ff81; /* Color for Tier T5 */
+}
+
+.tier-T4 {
+  background-color: #9df8a6; /* Example color for T3 */
+}
+
+.tier-T5 {
+  background-color: #76f8ef; /* Example color for T4 */
+}
+
+.tier-T6 {
+  background-color: #76c6f8; /* Example color for T4 */
+}
+
+.tier-heading {
+  color: black; /* Text color for all tier headings */
+  font-weight: bolder; /* Bold text for all tier headings */
+  text-align: center;
+  font-size: 16px;   
+  width: 50px;
+}
+
+.tier-list-info {
+  margin-bottom: 20px;
+  background-color: #2a2a33;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Stack the heading and content vertically */
+}
+
+.arti-heading {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 35px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.char-heading{
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.char-subheading{
+  color: white;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.arti-subheading{
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.tier-list-heading {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.tier-list-subheading{
+  color: white;
+  font-size: 14px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+#tierListAccordion {
+  --bs-accordion-border-color: transparent !important; /* Ensure no border color */
+  --bs-accordion-bg: transparent !important; /* Ensure no background color */
+  --bs-accordion-body-padding-x: 5px !important;
+  --bs-accordion-body-padding-y: 8px !important;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* Set the background color when the accordion tab is collapsed */
+.accordion-button {
+  background-color: #2f2f49 !important; /* Force the background color */
+  color: white !important; /* Set the text color to white */
+  border: none !important; /* Remove the border */
+  box-shadow: none !important; /* Remove the box shadow */
+  outline: none !important; /* Remove the outline */
+  border-color: transparent !important; /* Ensure no border color */
+  font-size: 14px !important;
+}
+
+/* Change color of FontAwesome icon used in accordion button */
+.accordion-button .fa {
+  color: white !important; /* Set the FontAwesome icon color to white */
+}
+
+/* Hover color when hovering over the accordion tab */
+.accordion-button:hover {
+  background-color: #555 !important; /* Darker grey when hovered */
+}
+
+/* Active (expanded) accordion tab color */
+.accordion-button:not(.collapsed) {
+  background-color: #2a2a33 !important; /* Darker grey when tab is expanded */
+  color: white !important; /* White text when expanded */
+  border-color: transparent !important; /* Ensure no border color */
+}
+
+/* Remove green background and border in collapsed state (even if using Bootstrap defaults) */
+.accordion-button.collapsed {
+  background-color: #2a2a33 !important; /* Force the background color */
+  border-color: transparent !important; /* Remove the green border */
+}
+
+/* Accordion body background color */
+.accordion-body {
+  background-color: #2f2f49 !important; /* Light grey background for the body */
+  color: white !important; /* Dark text for the body */
+  text-align: left !important; /* Align text to the left */
+  padding: 5px !important; 
+  font-size: 12px !important;
+}
+
+/* Remove focus outline and border */
+.accordion-button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: transparent !important; /* Ensure no border color on focus */
+}
+
+/* Expanded Content */
+.tier-list-expanded-content {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+  text-align: left;
+}
+
+.tags {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 5px 0; /* Add some margin for spacing */
+}
+
+.tags li {
+  padding: 0; /* No padding around the tag text */
+  margin: 2px 0; /* Space between tags, adjusted to vertical spacing */
+  color: white; /* Text color for tags */
+  font-size: 10px; /* Adjust font size for tags */
+  text-align: center; /* Center align text for better presentation */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.filters-container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start; /* Align items vertically at the start */
+  gap: 10px; /* Space between filter boxes */
+  flex-wrap: wrap; /* Allow wrapping of filter boxes when needed */
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.filters-container.collapsed {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start; /* Align items vertically at the start */
+  gap: 10px; /* Space between filter boxes */
+  flex-wrap: wrap; /* Allow wrapping of filter boxes when needed */
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.arti-filters-container {
+  display: flex;
+  justify-content: space-evenly; /* Align items to the left */
+  align-items: flex-start; /* Align items vertically at the start */
+  gap: 10px; /* Space between filter boxes */
+  flex-wrap: wrap; /* Allow wrapping of filter boxes when needed */
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.arti-filters-container.collapsed {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: left; /* Align items vertically at the start */
+  gap: 10px; /* Space between filter boxes */
+  flex-wrap: wrap; /* Allow wrapping of filter boxes when needed */
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.filter-box {
+  width: auto;
+  margin: 0px; /* Space between filter boxes */
+  padding: 5px; /* Padding inside the filter box */
+  background-color: #2f2f49; /* Background color for filter box */
+  border-radius: 8px; /* Rounded corners for filter box */
+}
+
+.arti-filter-box {
+  width: auto;
+  margin-left: 12px; /* Space between filter boxes */
+  margin-right: 5px; /* Space between filter boxes */
+  padding: 6px; /* Padding inside the filter box */
+  background-color: #2f2f49; /* Background color for filter box */
+  border-radius: 8px; /* Rounded corners for filter box */
+}
+
+.reset-button {
+  font-size: 14px;
+  padding: 14px 14px; /* Add some padding */
+  background-color: #333; /* Background color for the button */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  margin-left: 10px; /* Add some space to the left of the button */
+  transition: width 0.3s ease;
+}
+
+.arti-reset-button {
+  font-size: 14px;
+  padding: 12px; /* Add some padding */
+  background-color: #333; /* Background color for the button */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  margin-left: 10px; /* Add some space to the left of the button */
+  transition: width 0.3s ease;
+}
+
+
+/* Additional styles for new filter box */
+.additional-filter-box {
+  width: 100%; /* Take full width when expanded */
+}
+
+
+.filter-options {
+  display: flex; /* Use flexbox to arrange filter options horizontally */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.filter-option {
+  cursor: pointer; /* Change cursor on hover */
+  padding: 5px 8px; /* Padding inside filter options */
+  border: 1px solid transparent; /* Initial border */
+  border-radius: 4px; /* Rounded corners for options */
+}
+
+.filter-option.active {
+  background-color: #333;
+  border-radius: 8px; /* Active option background */
+  border: 1px solid #111; /* Border for active option */
+}
+
+.search-bar {
+  color: white;
+  padding: 11px; /* Padding inside the search bar */
+  background-color: #2f2f49;
+  border-radius: 8px; /* Rounded corners for the search bar */
+  width: 100%; /* Full width to fill the container */
+  max-width: 350px; /* Maximum width for the search bar */
+  margin-right: 0px; /* Space to the right of the search bar */
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+.search-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+.arti-search-bar {
+  color: white;
+  text-align: left;
+  padding: 11px; /* Padding inside the search bar */
+  background-color: #2f2f49;
+  border-radius: 8px; /* Rounded corners for the search bar */
+  width: 60%; /* Full width to fill the container */
+  max-width: 800px; /* Maximum width for the search bar */
+  margin-left: 5px;
+  margin-right: 0px; /* Space to the right of the search bar */
+  box-shadow: none;
+  outline: none;
+  border:none;
+}
+
+.arti-search-bar.expanded{
+  color: white;
+  text-align: left;
+  padding: 11px; /* Padding inside the search bar */
+  background-color: #2f2f49;
+  border-radius: 8px; /* Rounded corners for the search bar */
+  width: 60%; /* Full width to fill the container */
+  max-width: 800px; /* Maximum width for the search bar */
+  margin-left: 5px;
+  margin-right: 0px; /* Space to the right of the search bar */
+  box-shadow: none;
+  outline: none;
+  border:none;
+}
+
+.arti-reset-button:hover {
+  background-color: #777; /* Darken background on hover */
+}
+
+.arti-reset-button-container {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: wrap; /* Center the button */
+  width: 100%; /* Full width to take the line */
+  margin-top: 5px; /* Space above the button */
+}
+
+.reset-button:hover {
+  background-color: #777; /* Darken background on hover */
+}
+
+.reset-button-container {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: wrap; /* Center the button */
+  width: 100%; /* Full width to take the line */
+  margin-top: 10px; /* Space above the button */
+}
+
+.artifacts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.artifacts-table th, .artifacts-table td {
+  border: 1px solid #555;
+  padding: 8px;
+  text-align: left;
+}
+
+.artifacts-table th {
+  background-color: #2f2f49;
+}
+
+.artifacts-table tbody tr:nth-child(odd) {
+  background-color: #2c2d33; /* Color for odd rows */
+}
+
+.artifacts-table tbody tr:nth-child(even) {
+  background-color: #36373f; /* Color for even rows */
+}
+
+/* Base style for tags */
+.character-tag {
+  display: flex;
+  margin-top: 1px;
+  font-size: 9px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+  flex-direction: column;
+}
+
+.character-tags .character-tag:first-child {
+  margin-top: 5px; /* Adjust this value as needed */
+}
+
+/* Tag-specific styles */
+.tag-aoe, .tag-cleave, .tag-st {
+  color: white; /* Red for AOE */
+}
+
+.tag-buff, .tag-debuff, .tag-shield, .tag-heal {
+  color: #4caf50; /* Green for Buff */
+}
+
+.tag-cancel, .tag-ult {
+  color: #f44336; /* Red for Debuff */
+}
+
+.tag-coord, .tag-battery, .tag-cc, .tag-taunt {
+  color: #2196f3; /* Red for Debuff */
+}
+
+.tag-multirole, .tag-reaction, .tag-tech {
+  color: #ffb700; 
+}

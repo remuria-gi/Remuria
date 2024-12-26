@@ -1,0 +1,49 @@
+.quick-shortcuts {
+    margin-top: 20px;
+  }
+  
+  .quick-shortcuts h3 {
+    font-size: 24px;
+    color: #d0bc91;
+  }
+  
+  .shortcuts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .shortcut-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #2a2a33;
+    color: #d0bc91;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .shortcut-button:hover {
+    background-color: #3a3a4a;
+  }
+  
+  .icon-container {
+    width: 40px; /* Width for the image space */
+    height: 40px; /* Height for the image space */
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .shortcut-button span {
+    flex-grow: 1; /* Make label take the remaining space */
+  }
+  
+  .shortcut-button svg {
+    width: 24px;
+    height: 24px;
+  }  

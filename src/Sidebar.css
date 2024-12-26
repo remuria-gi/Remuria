@@ -1,0 +1,180 @@
+/* Sidebar styles */
+body {
+  margin: 0%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 10px;
+  width: 170px; /* Width of the sidebar */
+  background-color: #2a2a33; /* Sidebar background color */
+  color: #d0bc91;
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.sidebar-item.selected {
+  background-color: #2f2f49; /* Change to your desired color */
+  color: #d0bc91; /* Change to your desired text color */
+}
+
+.dashbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #2a2a33;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  color: white;
+  justify-content: flex-start;
+  z-index: 1000;
+}
+
+.dashbar-title {
+  position: absolute;
+  top: 10px;
+  margin-left: 25px;
+  font-size: 24px;
+  color: #d0bc91;
+}
+
+.dashbar-title.collapsed{
+  position: absolute;
+  top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #d0bc91;
+}
+
+/* Collapse styles */
+.sidebar.collapsed {
+  width: 60px; /* Collapsed width */
+}
+
+/* Collapse button styles */
+.collapse-btn {
+  position: absolute;
+  top: 5px;
+  left: 170px;
+  transform: rotate(-360deg);
+  background-color: transparent;
+  border: none;
+  color: #d0bc91;
+  padding: 10px;
+  padding-top: 4px;
+  cursor: pointer;
+  font-size: larger;
+}
+
+.collapse-btn.collapsed{
+  position: absolute;
+  top: 5px;
+  left: 60px;
+  transform: rotate(-360deg);
+  background-color: transparent;
+  border: none;
+  color: #d0bc91;
+  padding: 10px;
+  padding-top: 4px;
+  cursor: pointer;
+  font-size: larger;
+}
+
+.divider {
+  position: absolute;
+  width: 1px;
+  height: 50px; /* Adjust height as needed */
+  background-color: #d0bc91; /* Line color */
+  margin: 154px; /* Add spacing between the title and button */
+}
+
+.divider.collapsed{
+  position: absolute;
+  width: 1px;
+  height: 50px; /* Adjust height as needed */
+  background-color: #d0bc91; /* Line color */
+  margin: 45px; /* Add spacing between the title and button */
+}
+
+/* Sidebar list styles */
+.sidebar-list {
+  list-style: none;
+  padding: 0px;
+  flex-grow: 1; /* Expand list to fill available space */
+}
+
+/* Sidebar item styles */
+.sidebar-item {
+  padding-left: 30px; /* Consistent padding */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  margin: 0px; /* Adjust margin to reduce vertical spacing */
+  display: flex; /* Flex to align icon and text */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to start (left) */
+  height: 40px; /* Fixed height for items */
+}
+
+/* Hide text when sidebar is collapsed */
+.sidebar.collapsed .sidebar-item span {
+  display: none; /* Hide text span when collapsed */
+}
+
+/* Anchor link styles */
+.sidebar-item a {
+  color: #d0bc91;
+  text-decoration: none;
+  flex-grow: 1; /* Ensure text takes available space */
+}
+
+/* Collapsed state adjustments */
+.sidebar.collapsed .sidebar-item {
+  justify-content: center; /* Center icon in collapsed state */
+}
+
+/* Center icons and text when expanded */
+.sidebar-item span {
+  margin-left: 8px; /* Add space between icon and text */
+}
+
+/* Optionally reduce padding in collapsed state */
+.sidebar.collapsed .sidebar-item {
+  padding-left: 10px; /* Keep padding consistent */
+}
+
+/* Hover effects for items */
+.sidebar-item:hover {
+  text-decoration: underline;
+}
+
+/* Icon styles */
+.sidebar-item svg {
+  width: 15px; /* Adjust icon size as needed */
+  height: auto; /* Adjust icon size as needed */
+}
+
+.sidebar-line {
+  width: 100%;
+  height: 1px;
+  background-color: #d0bc91; /* Line color */
+  margin: 10px 0; /* Adjust spacing above and below the line */
+}
+
+/* Adjust collapsed icon size for consistency */
+.sidebar.collapsed .sidebar-item svg {
+  width: 15px; /* Slightly increase size to maintain visibility */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.last-item {
+  margin-top: auto; /* Push this item to the bottom of the sidebar */
+}

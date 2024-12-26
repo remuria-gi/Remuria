@@ -1,0 +1,611 @@
+[
+  {
+    "charname": "Albedo",
+    "rarity": "5*",
+    "element": "Geo",
+    "image": "/images/charlist/albedo.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Alhaitham",
+    "rarity": "5*",
+    "element": "Dendro",
+    "image": "/images/charlist/alhaitham.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Aloy",
+    "rarity": "5*",
+    "element": "Cryo",
+    "image": "/images/charlist/aloy.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Amber ",
+    "rarity": "4*",
+    "element": "Pyro",
+    "image": "/images/charlist/amber.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Arlecchino",
+    "rarity": "5*",
+    "element": "Pyro",
+    "image": "/images/charlist/arlecchino.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Ayaka",
+    "rarity": "5*",
+    "element": "Cryo",
+    "image": "/images/charlist/ayaka.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Ayato",
+    "rarity": "5*",
+    "element": "Hydro",
+    "image": "/images/charlist/ayato.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Baizhu",
+    "rarity": "5*",
+    "element": "Dendro",
+    "image": "/images/charlist/baizhu.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Barbara",
+    "rarity": "4*",
+    "element": "Hydro",
+    "image": "/images/charlist/barbara.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Beidou",
+    "rarity": "4*",
+    "element": "Electro",
+    "image": "/images/charlist/beidou.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Bennett",
+    "rarity": "4*",
+    "element": "Pyro",
+    "image": "/images/charlist/bennett.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Candace",
+    "rarity": "4*",
+    "element": "Hydro",
+    "image": "/images/charlist/candace.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Charlotte",
+    "rarity": "4*",
+    "element": "Cryo",
+    "image": "/images/charlist/charlotte.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Chevreuse",
+    "rarity": "4*",
+    "element": "Pyro",
+    "image": "/images/charlist/chevreuse.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Chiori",
+    "rarity": "5*",
+    "element": "Geo",
+    "image": "/images/charlist/chiori.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Chongyun",
+    "rarity": "4*",
+    "element": "Cryo",
+    "image": "/images/charlist/chongyun.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Collei",
+    "rarity": "4*",
+    "element": "Dendro",
+    "image": "/images/charlist/collei.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Cyno",
+    "rarity": "5*",
+    "element": "Electro",
+    "image": "/images/charlist/cyno.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Dehya",
+    "rarity": "5*",
+    "element": "Pyro",
+    "image": "/images/charlist/dehya.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Diluc",
+    "rarity": "5*",
+    "element": "Pyro",
+    "image": "/images/charlist/diluc.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Diona",
+    "rarity": "4*",
+    "element": "Cryo",
+    "image": "/images/charlist/diona.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Dori",
+    "rarity": "4*",
+    "element": "Electro",
+    "image": "/images/charlist/dori.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Emilie",
+    "rarity": "5*",
+    "element": "Dendro",
+    "image": "/images/charlist/emilie.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Eula",
+    "rarity": "5*",
+    "element": "Cryo",
+    "image": "/images/charlist/eula.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Faruzan",
+    "rarity": "4*",
+    "element": "Anemo",
+    "image": "/images/charlist/faruzan.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Fischl",
+    "rarity": "4*",
+    "element": "Electro",
+    "image": "/images/charlist/fischl.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Freminet",
+    "rarity": "4*",
+    "element": "Cryo",
+    "image": "/images/charlist/freminet.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Furina",
+    "rarity": "5*",
+    "element": "Hydro",
+    "image": "/images/charlist/furina.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Gaming",
+    "rarity": "4*",
+    "element": "Pyro",
+    "image": "/images/charlist/gaming.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Ganyu",
+    "rarity": "5*",
+    "element": "Cryo",
+    "image": "/images/charlist/ganyu.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Gorou",
+    "rarity": "4*",
+    "element": "Geo",
+    "image": "/images/charlist/gorou.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Shikanoin Heizou",
+    "rarity": "4*",
+    "element": "Anemo",
+    "image": "/images/charlist/heizou.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Hu Tao",
+    "rarity": "5*",
+    "element": "Pyro",
+    "image": "/images/charlist/hutao.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Arataki Itto",
+    "rarity": "5*",
+    "element": "Geo",
+    "image": "/images/charlist/itto.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Jean",
+    "rarity": "5*",
+    "element": "Anemo",
+    "image": "/images/charlist/jean.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Kachina",
+    "rarity": "4*",
+    "element": "Geo",
+    "image": "/images/charlist/kachina.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Kaveh",
+    "rarity": "4*",
+    "element": "Dendro",
+    "image": "/images/charlist/kaveh.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Kayea",
+    "rarity": "4*",
+    "element": "Cryo",
+    "image": "/images/charlist/kayea.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Kaedehara Kazuha",
+    "rarity": "5*",
+    "element": "Anemo",
+    "image": "/images/charlist/kazuha.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Keqing",
+    "rarity": "5*",
+    "element": "Electro",
+    "image": "/images/charlist/keqing.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Kinich",
+    "rarity": "5*",
+    "element": "Dendro",
+    "image": "/images/charlist/kinich.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Kirara",
+    "rarity": "4*",
+    "element": "Dendro",
+    "image": "/images/charlist/kirara.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Klee",
+    "rarity": "5*",
+    "element": "Pyro",
+    "image": "/images/charlist/klee.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Kokomi",
+    "rarity": "5*",
+    "element": "Hydro",
+    "image": "/images/charlist/kokomi.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Kuki Shinobu",
+    "rarity": "4*",
+    "element": "Electro",
+    "image": "/images/charlist/kuki.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Layla",
+    "rarity": "4*",
+    "element": "Cryo",
+    "image": "/images/charlist/layla.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Lisa",
+    "rarity": "4*",
+    "element": "Electro",
+    "image": "/images/charlist/lisa.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Lynette",
+    "rarity": "4*",
+    "element": "Anemo",
+    "image": "/images/charlist/lynette.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Lyney",
+    "rarity": "5*",
+    "element": "Pyro",
+    "image": "/images/charlist/lyney.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Mika",
+    "rarity": "4*",
+    "element": "Cryo",
+    "image": "/images/charlist/mika.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Mona",
+    "rarity": "5*",
+    "element": "Hydro",
+    "image": "/images/charlist/mona.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Mualani",
+    "rarity": "5*",
+    "element": "Hydro",
+    "image": "/images/charlist/mualani.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Nahida",
+    "rarity": "5*",
+    "element": "Dendro",
+    "image": "/images/charlist/nahida.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Navia",
+    "rarity": "5*",
+    "element": "Geo",
+    "image": "/images/charlist/navia.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Neuvilette",
+    "rarity": "5*",
+    "element": "Hydro",
+    "image": "/images/charlist/neuvilette.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Nilou",
+    "rarity": "5*",
+    "element": "Hydro",
+    "image": "/images/charlist/nilou.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Ninnguang",
+    "rarity": "4*",
+    "element": "Geo",
+    "image": "/images/charlist/ninnguang.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Noelle",
+    "rarity": "4*",
+    "element": "Geo",
+    "image": "/images/charlist/noelle.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Qiqi",
+    "rarity": "5*",
+    "element": "Cryo",
+    "image": "/images/charlist/qiqi.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Raiden Shogun",
+    "rarity": "5*",
+    "element": "Electro",
+    "image": "/images/charlist/raiden.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Razor",
+    "rarity": "4*",
+    "element": "Electro",
+    "image": "/images/charlist/razor.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Rosaria",
+    "rarity": "4*",
+    "element": "Cryo",
+    "image": "/images/charlist/rosaria.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Sara",
+    "rarity": "4*",
+    "element": "Electro",
+    "image": "/images/charlist/sara.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Sayu",
+    "rarity": "4*",
+    "element": "Anemo",
+    "image": "/images/charlist/sayu.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Sethos",
+    "rarity": "4*",
+    "element": "Electro",
+    "image": "/images/charlist/sethos.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Shenhe",
+    "rarity": "5*",
+    "element": "Cryo",
+    "image": "/images/charlist/shenhe.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Sigewinne",
+    "rarity": "5*",
+    "element": "Hydro",
+    "image": "/images/charlist/sigewinne.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Sucrose",
+    "rarity": "4*",
+    "element": "Anemo",
+    "image": "/images/charlist/sucrose.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Tartaglia",
+    "rarity": "5*",
+    "element": "Hydro",
+    "image": "/images/charlist/tartaglia.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Thoma",
+    "rarity": "4*",
+    "element": "Pyro",
+    "image": "/images/charlist/thoma.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Tighnari",
+    "rarity": "5*",
+    "element": "Dendro",
+    "image": "/images/charlist/tighnari.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Venti",
+    "rarity": "5*",
+    "element": "Anemo",
+    "image": "/images/charlist/venti.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Wanderer",
+    "rarity": "5*",
+    "element": "Anemo",
+    "image": "/images/charlist/wanderer.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Wriothesley",
+    "rarity": "5*",
+    "element": "Cryo",
+    "image": "/images/charlist/wrio.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Xiangling",
+    "rarity": "4*",
+    "element": "Pyro",
+    "image": "/images/charlist/xiangling.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Xianyun",
+    "rarity": "5*",
+    "element": "Anemo",
+    "image": "/images/charlist/xianyun.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Xiao",
+    "rarity": "5*",
+    "element": "Anemo",
+    "image": "/images/charlist/xiao.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Xilonen",
+    "rarity": "5*",
+    "element": "Geo",
+    "image": "/images/charlist/xilonen.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Xingqiu",
+    "rarity": "4*",
+    "element": "Hydro",
+    "image": "/images/charlist/xingqiu.png",
+    "weapon": "Sword"
+  },
+  {
+    "charname": "Xinyan",
+    "rarity": "4*",
+    "element": "Pyro",
+    "image": "/images/charlist/xinyan.png",
+    "weapon": "Claymore"
+  },
+  {
+    "charname": "Yae Miko",
+    "rarity": "5*",
+    "element": "Electro",
+    "image": "/images/charlist/yae miko.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Yanfei",
+    "rarity": "4*",
+    "element": "Pyro",
+    "image": "/images/charlist/yanfei.png",
+    "weapon": "Catalyst"
+  },
+  {
+    "charname": "Yaoyao",
+    "rarity": "4*",
+    "element": "Dendro",
+    "image": "/images/charlist/yaoyao.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Yelan",
+    "rarity": "5*",
+    "element": "Hydro",
+    "image": "/images/charlist/yelan.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Yoimiya",
+    "rarity": "5*",
+    "element": "Pyro",
+    "image": "/images/charlist/yoimiya.png",
+    "weapon": "Bow"
+  },
+  {
+    "charname": "Yunjin",
+    "rarity": "4*",
+    "element": "Geo",
+    "image": "/images/charlist/yunjin.png",
+    "weapon": "Polearm"
+  },
+  {
+    "charname": "Zhongli",
+    "rarity": "5*",
+    "element": "Geo",
+    "image": "/images/charlist/zhongli.png",
+    "weapon": "Polearm"
+  }
+]
