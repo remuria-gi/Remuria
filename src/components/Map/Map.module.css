@@ -1,0 +1,16 @@
+.MapContainer {
+  height: 93%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  & .bbs-qr.bbs-qr__en-us {
+    display: none;
+  }
+}
+
+.MapIFrame {
+  flex-grow: 1;
+  .bbs-qr.bbs-qr__en-us {
+    display: none;
+  }
+}
