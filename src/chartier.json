@@ -8,7 +8,7 @@
     ],
     "subDPS": [
       { "image": "/images/tierlist/emilie.png", "tags": ["BUFF","REACTION"], "overlay":"/images/elements-col/dendro.png" },
-      { "image": "/images/tierlist/furina.png", "tags": ["BUFF","HEAL"] , "overlay":"/images/elements-col/dendro.png"},
+      { "image": "/images/tierlist/furina.png", "tags": ["BUFF","HEAL"] , "overlay":"/images/elements-col/hydro.png"},
       { "image": "/images/tierlist/yelan.png", "tags": ["ST","COORD"] , "overlay":"/images/elements-col/dendro.png"},
       { "image": "/images/tierlist/xingqiu.png", "tags": ["ST","COORD","BATTERY"] , "overlay":"/images/elements-col/dendro.png"},
       { "image": "/images/tierlist/fischl.png", "tags": ["ST","COORD","BATTERY"] , "overlay":"/images/elements-col/dendro.png"}
