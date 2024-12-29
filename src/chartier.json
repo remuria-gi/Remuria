@@ -9,34 +9,34 @@
     "subDPS": [
       { "image": "/images/tierlist/emilie.png", "tags": ["BUFF","REACTION"], "overlay":"/images/elements-col/dendro.png" },
       { "image": "/images/tierlist/furina.png", "tags": ["BUFF","HEAL"] , "overlay":"/images/elements-col/hydro.png"},
-      { "image": "/images/tierlist/yelan.png", "tags": ["ST","COORD"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/xingqiu.png", "tags": ["ST","COORD","BATTERY"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/fischl.png", "tags": ["ST","COORD","BATTERY"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/yelan.png", "tags": ["ST","COORD"] , "overlay":"/images/elements-col/hydro.png"},
+      { "image": "/images/tierlist/xingqiu.png", "tags": ["ST","COORD","BATTERY"] , "overlay":"/images/elements-col/hydro.png"},
+      { "image": "/images/tierlist/fischl.png", "tags": ["ST","COORD","BATTERY"] , "overlay":"/images/elements-col/electro.png"}
     ],
     "amplifiers": [
-      { "image": "/images/tierlist/bennett.png", "tags": ["BUFF","HEAL","BATTERY"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/xilonen.png", "tags": ["DEBUFF","HEAL"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/kazuha.png", "tags": ["AOE","BUFF","CC"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/bennett.png", "tags": ["BUFF","HEAL","BATTERY"] , "overlay":"/images/elements-col/pyro.png"},
+      { "image": "/images/tierlist/xilonen.png", "tags": ["DEBUFF","HEAL"] , "overlay":"/images/elements-col/geo.png"},
+      { "image": "/images/tierlist/kazuha.png", "tags": ["AOE","BUFF","CC"] , "overlay":"/images/elements-col/anemo.png"}
     ],
     "sustain": [
-      { "image": "/images/tierlist/zhongli.png", "tags": ["SHIELD","DEBUFF"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/kokomi.png", "tags": ["HEAL"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/zhongli.png", "tags": ["SHIELD","DEBUFF"] , "overlay":"/images/elements-col/geo.png"},
+      { "image": "/images/tierlist/kokomi.png", "tags": ["HEAL"] , "overlay":"/images/elements-col/hydro.png"}
     ]
   },
   {
     "tier": "T0.5",
     "mainDPS": [
-      { "image": "/images/tierlist/hutao.png", "tags": ["ST","CANCEL"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/navia.png", "tags": ["CLEAVE","REACTION"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/mualani.png", "tags": ["CLEAVE","REACTION"] , "overlay":"/images/elements-col/dendro.png"},
+      { "image": "/images/tierlist/hutao.png", "tags": ["ST","CANCEL"] , "overlay":"/images/elements-col/pyro.png"},
+      { "image": "/images/tierlist/navia.png", "tags": ["CLEAVE","REACTION"] , "overlay":"/images/elements-col/geo.png"},
+      { "image": "/images/tierlist/mualani.png", "tags": ["CLEAVE","REACTION"] , "overlay":"/images/elements-col/hydro.png"},
       { "image": "/images/tierlist/kinich.png", "tags": ["ST","REACTION"] , "overlay":"/images/elements-col/dendro.png"}
     ],
     "subDPS": [
-      { "image": "/images/tierlist/xiangling.png", "tags": ["AOE","ULT"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/raiden.png", "tags": ["CLEAVE","BUFF","BATTERY","COORD"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/xiangling.png", "tags": ["AOE","ULT"] , "overlay":"/images/elements-col/pyro.png"},
+      { "image": "/images/tierlist/raiden.png", "tags": ["CLEAVE","BUFF","BATTERY","COORD"] , "overlay":"/images/elements-col/electro.png"}
     ],
     "amplifiers": [
-      { "image": "/images/tierlist/sucrose.png", "tags": ["CLEAVE","BUFF","CC"] , "overlay":"/images/elements-col/dendro.png"},
+      { "image": "/images/tierlist/sucrose.png", "tags": ["CLEAVE","BUFF","CC"] , "overlay":"/images/elements-col/anemo.png"},
       { "image": "/images/tierlist/nahida.png", "tags": ["BUFF","COORD"] , "overlay":"/images/elements-col/dendro.png"}
     ],
     "sustain": [
@@ -46,38 +46,38 @@
   {
     "tier": "T1",
     "mainDPS": [
-      { "image": "/images/tierlist/clorinde.png", "tags": ["AOE"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/lyney.png", "tags": ["ST","TAUNT","CANCEL"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/xiao.png", "tags": ["AOE","TECH","ULT"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/nilou.png", "tags": ["AOE","REACTION"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/yoimiya.png", "tags": ["ST","CANCEL"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/gaming.png", "tags": ["AOE","ULT"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/clorinde.png", "tags": ["AOE"] , "overlay":"/images/elements-col/electro.png"},
+      { "image": "/images/tierlist/lyney.png", "tags": ["ST","TAUNT","CANCEL"] , "overlay":"/images/elements-col/pyro.png"},
+      { "image": "/images/tierlist/xiao.png", "tags": ["AOE","TECH","ULT"] , "overlay":"/images/elements-col/anemo.png"},
+      { "image": "/images/tierlist/nilou.png", "tags": ["AOE","REACTION"] , "overlay":"/images/elements-col/hydro.png"},
+      { "image": "/images/tierlist/yoimiya.png", "tags": ["ST","CANCEL"] , "overlay":"/images/elements-col/pyro.png"},
+      { "image": "/images/tierlist/gaming.png", "tags": ["AOE","ULT"] , "overlay":"/images/elements-col/pyro.png"}
     ],
     "subDPS": [
-      { "image": "/images/tierlist/yae miko.png", "tags": ["CLEAVE","COORD"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/yae miko.png", "tags": ["CLEAVE","COORD"] , "overlay":"/images/elements-col/electro.png"}
     ],
     "amplifiers": [
-      { "image": "/images/tierlist/xianyun.png", "tags": ["BUFF","HEAL"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/xianyun.png", "tags": ["BUFF","HEAL"] , "overlay":"/images/elements-col/anemo.png"}
     ],
     "sustain": [
-      { "image": "/images/tierlist/kuki.png", "tags": ["HEAL","COORD"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/jean.png", "tags": ["HEAL","BATTERY"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/kuki.png", "tags": ["HEAL","COORD"] , "overlay":"/images/elements-col/electro.png"},
+      { "image": "/images/tierlist/jean.png", "tags": ["HEAL","BATTERY"] , "overlay":"/images/elements-col/anemo.png"}
     ]
   },
   {
     "tier": "T2",
     "mainDPS": [
-      { "image": "/images/tierlist/wrio.png", "tags": ["ST"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/itto.png", "tags": ["CLEAVE","REACTION"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/keqing.png", "tags": ["AOE"] , "overlay":"/images/elements-col/dendro.png"},
+      { "image": "/images/tierlist/wrio.png", "tags": ["ST"] , "overlay":"/images/elements-col/cryo.png"},
+      { "image": "/images/tierlist/itto.png", "tags": ["CLEAVE","REACTION"] , "overlay":"/images/elements-col/geo.png"},
+      { "image": "/images/tierlist/keqing.png", "tags": ["AOE"] , "overlay":"/images/elements-col/electro.png"},
       { "image": "/images/tierlist/tighnari.png", "tags": ["ST","TAUNT"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/tartaglia.png", "tags": ["AOE","TECH"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/wanderer.png", "tags": ["ST","TECH"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/yanfei.png", "tags": ["CLEAVE","MULTIROLE"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/cyno.png", "tags": ["CLEAVE","TECH","ULT"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/tartaglia.png", "tags": ["AOE","TECH"] , "overlay":"/images/elements-col/hydro.png"},
+      { "image": "/images/tierlist/wanderer.png", "tags": ["ST","TECH"] , "overlay":"/images/elements-col/anemo.png"},
+      { "image": "/images/tierlist/yanfei.png", "tags": ["CLEAVE","MULTIROLE"] , "overlay":"/images/elements-col/pyro.png"},
+      { "image": "/images/tierlist/cyno.png", "tags": ["CLEAVE","TECH","ULT"] , "overlay":"/images/elements-col/electro.png"}
     ],
     "subDPS": [
-      { "image": "/images/tierlist/beidou.png", "tags": ["CLEAVE","TECH","ULT"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/beidou.png", "tags": ["CLEAVE","TECH","ULT"] , "overlay":"/images/elements-col/electro.png"}
     ],
     "amplifiers": [
       { "image": "/images/tierlist/collei.png", "tags": ["REACTION"] , "overlay":"/images/elements-col/dendro.png"}
@@ -87,42 +87,41 @@
   {
     "tier": "T3",
     "mainDPS": [
-      { "image": "/images/tierlist/ayaka.png", "tags": ["ST"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/ganyu.png", "tags": ["AOE","MULTIROLE","TECH"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/heizou.png", "tags": ["CLEAVE"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/sethos.png", "tags": ["CLEAVE"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/ayaka.png", "tags": ["ST"] , "overlay":"/images/elements-col/cryo.png"},
+      { "image": "/images/tierlist/ganyu.png", "tags": ["AOE","MULTIROLE","TECH"] , "overlay":"/images/elements-col/cryo.png"},
+      { "image": "/images/tierlist/heizou.png", "tags": ["CLEAVE"] , "overlay":"/images/elements-col/anemo.png"},
+      { "image": "/images/tierlist/sethos.png", "tags": ["CLEAVE"] , "overlay":"/images/elements-col/electro.png"}
     ],
     "subDPS": [
-      { "image": "/images/tierlist/kayea.png", "tags": ["AOE"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/kayea.png", "tags": ["AOE"] , "overlay":"/images/elements-col/cryo.png"}
     ],
     "amplifiers": [
-      { "image": "/images/tierlist/kachina.png", "tags": ["DEBUFF"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/kachina.png", "tags": ["DEBUFF"] , "overlay":"/images/elements-col/geo.png"}
     ],
     "sustain": []
   },
   {
     "tier": "T4",
     "mainDPS": [
-      { "image": "/images/tierlist/eula.png", "tags": ["ST","ULT"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/ninnguang.png", "tags": ["ST"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/klee.png", "tags": ["ST","CANCEL"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/noelle.png", "tags": ["CLEAVE","SHIELD","ULT"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/razor.png", "tags": ["ST","ULT"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/eula.png", "tags": ["ST","ULT"] , "overlay":"/images/elements-col/cryo.png"},
+      { "image": "/images/tierlist/ninnguang.png", "tags": ["ST"] , "overlay":"/images/elements-col/geo.png"},
+      { "image": "/images/tierlist/klee.png", "tags": ["ST","CANCEL"] , "overlay":"/images/elements-col/pyro.png"},
+      { "image": "/images/tierlist/noelle.png", "tags": ["CLEAVE","SHIELD","ULT"] , "overlay":"/images/elements-col/geo.png"},
+      { "image": "/images/tierlist/razor.png", "tags": ["ST","ULT"] , "overlay":"/images/elements-col/electro.png"}
     ],
     "subDPS": [
-      { "image": "/images/tierlist/chongyun.png", "tags": ["ST","ULT"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/chongyun.png", "tags": ["ST","ULT"] , "overlay":"/images/elements-col/cryo.png"}
     ],
     "amplifiers": [
-      { "image": "/images/tierlist/barbara.png", "tags": ["HEAL"] , "overlay":"/images/elements-col/dendro.png"}
     ],
     "sustain": [
-      { "image": "/images/tierlist/barbara.png", "tags": ["HEAL"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/barbara.png", "tags": ["HEAL"] , "overlay":"/images/elements-col/hydro.png"}
     ]
   },
   {
     "tier": "T5",
     "mainDPS": [
-      { "image": "/images/tierlist/freminet.png", "tags": ["ST"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/freminet.png", "tags": ["ST"] , "overlay":"/images/elements-col/cryo.png"}
     ],
     "subDPS": [],
     "amplifiers": [],
@@ -131,8 +130,8 @@
   {
     "tier": "T6",
     "mainDPS": [
-      { "image": "/images/tierlist/amber.png", "tags": ["ST","TAUNT"] , "overlay":"/images/elements-col/dendro.png"},
-      { "image": "/images/tierlist/xinyan.png", "tags": ["ST","ULT"] , "overlay":"/images/elements-col/dendro.png"}
+      { "image": "/images/tierlist/amber.png", "tags": ["ST","TAUNT"] , "overlay":"/images/elements-col/pyro.png"},
+      { "image": "/images/tierlist/xinyan.png", "tags": ["ST","ULT"] , "overlay":"/images/elements-col/pyro.png"}
     ],
     "subDPS": [],
     "amplifiers": [],
